@@ -1,7 +1,9 @@
 <script>
     let jan = [
         {event: "S'mores Night", date: "January 13th"},
-        {event: "Ski Lodge", date: "January 16th"}
+        {event: "Ski Lodge", date: "January 16th"},
+        {event: "Formal Recruitment", date: "January 18th - 20th"},
+        {event: "Informal Recruitment", date: "January 24th - 28th"}
     ];
 
     let feb = [
@@ -14,8 +16,7 @@
     let mar = [
         {event: "Spring Break", date: "March 5th - 13th"},
         {event: "Social w/ Zeta and SK", date: "March 19th"},
-        {event: "Bayou", date: "March 25th - 26th"},
-        {event: "Mardi Gras Social w/ GPHI", date: "February 23rd"}
+        {event: "Bayou", date: "March 25th - 26th"}
     ];
 
     let apr = [

@@ -473,7 +473,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (29:4) {#each jan as e}
+    // (30:4) {#each jan as e}
     function create_each_block_3(ctx) {
     	let li;
     	let t0_value = /*e*/ ctx[4].event + "";
@@ -491,8 +491,8 @@ var app = (function () {
     			span = element("span");
     			t2 = text(t2_value);
     			attr_dev(span, "class", "svelte-147klw1");
-    			add_location(span, file$2, 29, 25, 930);
-    			add_location(li, file$2, 29, 8, 913);
+    			add_location(span, file$2, 30, 25, 1000);
+    			add_location(li, file$2, 30, 8, 983);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -511,14 +511,14 @@ var app = (function () {
     		block,
     		id: create_each_block_3.name,
     		type: "each",
-    		source: "(29:4) {#each jan as e}",
+    		source: "(30:4) {#each jan as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (36:1) {#each feb as e}
+    // (37:1) {#each feb as e}
     function create_each_block_2(ctx) {
     	let li;
     	let t0_value = /*e*/ ctx[4].event + "";
@@ -536,8 +536,8 @@ var app = (function () {
     			span = element("span");
     			t2 = text(t2_value);
     			attr_dev(span, "class", "svelte-147klw1");
-    			add_location(span, file$2, 36, 19, 1043);
-    			add_location(li, file$2, 36, 2, 1026);
+    			add_location(span, file$2, 37, 19, 1113);
+    			add_location(li, file$2, 37, 2, 1096);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -556,14 +556,14 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(36:1) {#each feb as e}",
+    		source: "(37:1) {#each feb as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (43:1) {#each mar as e}
+    // (44:1) {#each mar as e}
     function create_each_block_1(ctx) {
     	let li;
     	let t0_value = /*e*/ ctx[4].event + "";
@@ -581,8 +581,8 @@ var app = (function () {
     			span = element("span");
     			t2 = text(t2_value);
     			attr_dev(span, "class", "svelte-147klw1");
-    			add_location(span, file$2, 43, 19, 1150);
-    			add_location(li, file$2, 43, 2, 1133);
+    			add_location(span, file$2, 44, 19, 1220);
+    			add_location(li, file$2, 44, 2, 1203);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -601,14 +601,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(43:1) {#each mar as e}",
+    		source: "(44:1) {#each mar as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (50:1) {#each apr as e}
+    // (51:1) {#each apr as e}
     function create_each_block(ctx) {
     	let li;
     	let t0_value = /*e*/ ctx[4].event + "";
@@ -626,8 +626,8 @@ var app = (function () {
     			span = element("span");
     			t2 = text(t2_value);
     			attr_dev(span, "class", "svelte-147klw1");
-    			add_location(span, file$2, 50, 19, 1257);
-    			add_location(li, file$2, 50, 2, 1240);
+    			add_location(span, file$2, 51, 19, 1327);
+    			add_location(li, file$2, 51, 2, 1310);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -646,7 +646,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(50:1) {#each apr as e}",
+    		source: "(51:1) {#each apr as e}",
     		ctx
     	});
 
@@ -742,18 +742,18 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(h20, file$2, 26, 0, 859);
+    			add_location(h20, file$2, 27, 0, 929);
     			attr_dev(ul0, "class", "svelte-147klw1");
-    			add_location(ul0, file$2, 27, 0, 877);
-    			add_location(h21, file$2, 33, 0, 980);
+    			add_location(ul0, file$2, 28, 0, 947);
+    			add_location(h21, file$2, 34, 0, 1050);
     			attr_dev(ul1, "class", "svelte-147klw1");
-    			add_location(ul1, file$2, 34, 0, 999);
-    			add_location(h22, file$2, 40, 0, 1090);
+    			add_location(ul1, file$2, 35, 0, 1069);
+    			add_location(h22, file$2, 41, 0, 1160);
     			attr_dev(ul2, "class", "svelte-147klw1");
-    			add_location(ul2, file$2, 41, 0, 1106);
-    			add_location(h23, file$2, 47, 0, 1197);
+    			add_location(ul2, file$2, 42, 0, 1176);
+    			add_location(h23, file$2, 48, 0, 1267);
     			attr_dev(ul3, "class", "svelte-147klw1");
-    			add_location(ul3, file$2, 48, 0, 1213);
+    			add_location(ul3, file$2, 49, 0, 1283);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -936,7 +936,15 @@ var app = (function () {
     			event: "S'mores Night",
     			date: "January 13th"
     		},
-    		{ event: "Ski Lodge", date: "January 16th" }
+    		{ event: "Ski Lodge", date: "January 16th" },
+    		{
+    			event: "Formal Recruitment",
+    			date: "January 18th - 20th"
+    		},
+    		{
+    			event: "Informal Recruitment",
+    			date: "January 24th - 28th"
+    		}
     	];
 
     	let feb = [
@@ -970,10 +978,6 @@ var app = (function () {
     		{
     			event: "Bayou",
     			date: "March 25th - 26th"
-    		},
-    		{
-    			event: "Mardi Gras Social w/ GPHI",
-    			date: "February 23rd"
     		}
     	];
 
