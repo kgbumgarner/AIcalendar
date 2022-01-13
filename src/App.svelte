@@ -1,30 +1,58 @@
 <script>
-	export let name;
+	import Header from "./Header.svelte";
+	import Roadmap from "./Roadmap.svelte";
+	import Footer from "./Footer.svelte";
 </script>
 
+<!-- COMPONENTS -->
+<header>
+	<Header/>
+</header>
+
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<Roadmap/>
 </main>
 
+<footer>
+	<Footer/>
+</footer>	
+
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
+	:root {
+    /* fonts */
+    --ff-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    
+    /* colors */
+    --clr-light: #ffffff;
+    --clr-dark: #007cba;
+    --clr-darker: #005596;
+    --clr-accent: #E7A614;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+	header {
+		background-color: var(--clr-dark);
+		color: var(--clr-light);
+		display: flex; 
+		flex-direction: column;
+		margin: auto;
+		align-items: center;
+		width: 100%;
+
+		box-shadow: var(--bs);
 	}
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
+	footer {
+		background-color: var(--clr-dark);
 
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
+		display: flex; 
+		flex-direction: column;
+		margin: auto;
+		align-items: center;
+		margin-top: 40px; 
+		margin-bottom: 40px;
+		width: 100%;
 	}
 </style>
