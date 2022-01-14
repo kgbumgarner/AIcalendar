@@ -1,4 +1,5 @@
 # AIcalendar
-A roadmap of events for Pi Kappa Phi: Alpha Iota 🎈
+About: A roadmap of events for Pi Kappa Phi: Alpha Iota 🎈
+Purpose: A central calendar so everyone's on the same page this semester.
 
-https://pkpcalendar.netlify.app/
+Found at: https://pkcalendar.com/
