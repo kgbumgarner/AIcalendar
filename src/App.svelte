@@ -19,9 +19,6 @@
 
 <style>
 	:root {
-    /* fonts */
-    --ff-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
     
     /* colors */
     --clr-light: #ffffff;
@@ -51,8 +48,7 @@
 		flex-direction: column;
 		margin: auto;
 		align-items: center;
-		margin-top: 40px; 
-		margin-bottom: 40px;
+		padding: 40px;
 		width: 100%;
 	}
 </style>

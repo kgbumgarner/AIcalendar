@@ -35,6 +35,9 @@ var app = (function () {
     function is_empty(obj) {
         return Object.keys(obj).length === 0;
     }
+    function null_to_empty(value) {
+        return value == null ? '' : value;
+    }
     function append(target, node) {
         target.appendChild(node);
     }
@@ -451,36 +454,36 @@ var app = (function () {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[4] = list[i];
+    	child_ctx[5] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[4] = list[i];
+    	child_ctx[5] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_2(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[4] = list[i];
+    	child_ctx[5] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_3(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[4] = list[i];
+    	child_ctx[5] = list[i];
     	return child_ctx;
     }
 
-    // (30:4) {#each jan as e}
+    // (34:8) {#each jan as e}
     function create_each_block_3(ctx) {
     	let li;
-    	let t0_value = /*e*/ ctx[4].event + "";
+    	let t0_value = /*e*/ ctx[5].event + "";
     	let t0;
     	let t1;
     	let span;
-    	let t2_value = /*e*/ ctx[4].date + "";
+    	let t2_value = /*e*/ ctx[5].date + "";
     	let t2;
 
     	const block = {
@@ -490,9 +493,14 @@ var app = (function () {
     			t1 = text(" on ");
     			span = element("span");
     			t2 = text(t2_value);
-    			attr_dev(span, "class", "svelte-147klw1");
-    			add_location(span, file$2, 30, 25, 1000);
-    			add_location(li, file$2, 30, 8, 983);
+    			attr_dev(span, "class", "svelte-151qpsa");
+    			add_location(span, file$2, 34, 110, 1194);
+
+    			attr_dev(li, "class", "" + (null_to_empty(Date.parse(/*currentDate*/ ctx[4]) > Date.parse(/*e*/ ctx[5].dateString)
+    			? "past"
+    			: "upcoming") + " svelte-151qpsa"));
+
+    			add_location(li, file$2, 34, 12, 1096);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -511,21 +519,21 @@ var app = (function () {
     		block,
     		id: create_each_block_3.name,
     		type: "each",
-    		source: "(30:4) {#each jan as e}",
+    		source: "(34:8) {#each jan as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (37:1) {#each feb as e}
+    // (42:8) {#each feb as e}
     function create_each_block_2(ctx) {
     	let li;
-    	let t0_value = /*e*/ ctx[4].event + "";
+    	let t0_value = /*e*/ ctx[5].event + "";
     	let t0;
     	let t1;
     	let span;
-    	let t2_value = /*e*/ ctx[4].date + "";
+    	let t2_value = /*e*/ ctx[5].date + "";
     	let t2;
 
     	const block = {
@@ -535,9 +543,14 @@ var app = (function () {
     			t1 = text(" on ");
     			span = element("span");
     			t2 = text(t2_value);
-    			attr_dev(span, "class", "svelte-147klw1");
-    			add_location(span, file$2, 37, 19, 1113);
-    			add_location(li, file$2, 37, 2, 1096);
+    			attr_dev(span, "class", "svelte-151qpsa");
+    			add_location(span, file$2, 42, 110, 1444);
+
+    			attr_dev(li, "class", "" + (null_to_empty(Date.parse(/*currentDate*/ ctx[4]) > Date.parse(/*e*/ ctx[5].dateString)
+    			? "past"
+    			: "upcoming") + " svelte-151qpsa"));
+
+    			add_location(li, file$2, 42, 12, 1346);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -556,21 +569,21 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(37:1) {#each feb as e}",
+    		source: "(42:8) {#each feb as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (44:1) {#each mar as e}
+    // (50:8) {#each mar as e}
     function create_each_block_1(ctx) {
     	let li;
-    	let t0_value = /*e*/ ctx[4].event + "";
+    	let t0_value = /*e*/ ctx[5].event + "";
     	let t0;
     	let t1;
     	let span;
-    	let t2_value = /*e*/ ctx[4].date + "";
+    	let t2_value = /*e*/ ctx[5].date + "";
     	let t2;
 
     	const block = {
@@ -580,9 +593,14 @@ var app = (function () {
     			t1 = text(" on ");
     			span = element("span");
     			t2 = text(t2_value);
-    			attr_dev(span, "class", "svelte-147klw1");
-    			add_location(span, file$2, 44, 19, 1220);
-    			add_location(li, file$2, 44, 2, 1203);
+    			attr_dev(span, "class", "svelte-151qpsa");
+    			add_location(span, file$2, 50, 110, 1691);
+
+    			attr_dev(li, "class", "" + (null_to_empty(Date.parse(/*currentDate*/ ctx[4]) > Date.parse(/*e*/ ctx[5].dateString)
+    			? "past"
+    			: "upcoming") + " svelte-151qpsa"));
+
+    			add_location(li, file$2, 50, 12, 1593);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -601,21 +619,21 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(44:1) {#each mar as e}",
+    		source: "(50:8) {#each mar as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (51:1) {#each apr as e}
+    // (58:8) {#each apr as e}
     function create_each_block(ctx) {
     	let li;
-    	let t0_value = /*e*/ ctx[4].event + "";
+    	let t0_value = /*e*/ ctx[5].event + "";
     	let t0;
     	let t1;
     	let span;
-    	let t2_value = /*e*/ ctx[4].date + "";
+    	let t2_value = /*e*/ ctx[5].date + "";
     	let t2;
 
     	const block = {
@@ -625,9 +643,14 @@ var app = (function () {
     			t1 = text(" on ");
     			span = element("span");
     			t2 = text(t2_value);
-    			attr_dev(span, "class", "svelte-147klw1");
-    			add_location(span, file$2, 51, 19, 1327);
-    			add_location(li, file$2, 51, 2, 1310);
+    			attr_dev(span, "class", "svelte-151qpsa");
+    			add_location(span, file$2, 58, 110, 1938);
+
+    			attr_dev(li, "class", "" + (null_to_empty(Date.parse(/*currentDate*/ ctx[4]) > Date.parse(/*e*/ ctx[5].dateString)
+    			? "past"
+    			: "upcoming") + " svelte-151qpsa"));
+
+    			add_location(li, file$2, 58, 12, 1840);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -646,7 +669,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(51:1) {#each apr as e}",
+    		source: "(58:8) {#each apr as e}",
     		ctx
     	});
 
@@ -656,18 +679,22 @@ var app = (function () {
     function create_fragment$2(ctx) {
     	let h20;
     	let t1;
+    	let div0;
     	let ul0;
     	let t2;
     	let h21;
     	let t4;
+    	let div1;
     	let ul1;
     	let t5;
     	let h22;
     	let t7;
+    	let div2;
     	let ul2;
     	let t8;
     	let h23;
     	let t10;
+    	let div3;
     	let ul3;
     	let each_value_3 = /*jan*/ ctx[0];
     	validate_each_argument(each_value_3);
@@ -706,6 +733,7 @@ var app = (function () {
     			h20 = element("h2");
     			h20.textContent = "January";
     			t1 = space();
+    			div0 = element("div");
     			ul0 = element("ul");
 
     			for (let i = 0; i < each_blocks_3.length; i += 1) {
@@ -716,6 +744,7 @@ var app = (function () {
     			h21 = element("h2");
     			h21.textContent = "February";
     			t4 = space();
+    			div1 = element("div");
     			ul1 = element("ul");
 
     			for (let i = 0; i < each_blocks_2.length; i += 1) {
@@ -726,6 +755,7 @@ var app = (function () {
     			h22 = element("h2");
     			h22.textContent = "March";
     			t7 = space();
+    			div2 = element("div");
     			ul2 = element("ul");
 
     			for (let i = 0; i < each_blocks_1.length; i += 1) {
@@ -736,24 +766,33 @@ var app = (function () {
     			h23 = element("h2");
     			h23.textContent = "April";
     			t10 = space();
+    			div3 = element("div");
     			ul3 = element("ul");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			add_location(h20, file$2, 27, 0, 929);
-    			attr_dev(ul0, "class", "svelte-147klw1");
-    			add_location(ul0, file$2, 28, 0, 947);
-    			add_location(h21, file$2, 34, 0, 1050);
-    			attr_dev(ul1, "class", "svelte-147klw1");
-    			add_location(ul1, file$2, 35, 0, 1069);
-    			add_location(h22, file$2, 41, 0, 1160);
-    			attr_dev(ul2, "class", "svelte-147klw1");
-    			add_location(ul2, file$2, 42, 0, 1176);
-    			add_location(h23, file$2, 48, 0, 1267);
-    			attr_dev(ul3, "class", "svelte-147klw1");
-    			add_location(ul3, file$2, 49, 0, 1283);
+    			add_location(h20, file$2, 30, 0, 1009);
+    			attr_dev(ul0, "class", "svelte-151qpsa");
+    			add_location(ul0, file$2, 32, 4, 1052);
+    			attr_dev(div0, "class", "ulCon svelte-151qpsa");
+    			add_location(div0, file$2, 31, 0, 1027);
+    			add_location(h21, file$2, 38, 0, 1258);
+    			attr_dev(ul1, "class", "svelte-151qpsa");
+    			add_location(ul1, file$2, 40, 4, 1302);
+    			attr_dev(div1, "class", "ulCon svelte-151qpsa");
+    			add_location(div1, file$2, 39, 0, 1277);
+    			add_location(h22, file$2, 46, 0, 1508);
+    			attr_dev(ul2, "class", "svelte-151qpsa");
+    			add_location(ul2, file$2, 48, 4, 1549);
+    			attr_dev(div2, "class", "ulCon svelte-151qpsa");
+    			add_location(div2, file$2, 47, 0, 1524);
+    			add_location(h23, file$2, 54, 0, 1755);
+    			attr_dev(ul3, "class", "svelte-151qpsa");
+    			add_location(ul3, file$2, 56, 4, 1796);
+    			attr_dev(div3, "class", "ulCon svelte-151qpsa");
+    			add_location(div3, file$2, 55, 0, 1771);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -761,7 +800,8 @@ var app = (function () {
     		m: function mount(target, anchor) {
     			insert_dev(target, h20, anchor);
     			insert_dev(target, t1, anchor);
-    			insert_dev(target, ul0, anchor);
+    			insert_dev(target, div0, anchor);
+    			append_dev(div0, ul0);
 
     			for (let i = 0; i < each_blocks_3.length; i += 1) {
     				each_blocks_3[i].m(ul0, null);
@@ -770,7 +810,8 @@ var app = (function () {
     			insert_dev(target, t2, anchor);
     			insert_dev(target, h21, anchor);
     			insert_dev(target, t4, anchor);
-    			insert_dev(target, ul1, anchor);
+    			insert_dev(target, div1, anchor);
+    			append_dev(div1, ul1);
 
     			for (let i = 0; i < each_blocks_2.length; i += 1) {
     				each_blocks_2[i].m(ul1, null);
@@ -779,7 +820,8 @@ var app = (function () {
     			insert_dev(target, t5, anchor);
     			insert_dev(target, h22, anchor);
     			insert_dev(target, t7, anchor);
-    			insert_dev(target, ul2, anchor);
+    			insert_dev(target, div2, anchor);
+    			append_dev(div2, ul2);
 
     			for (let i = 0; i < each_blocks_1.length; i += 1) {
     				each_blocks_1[i].m(ul2, null);
@@ -788,14 +830,15 @@ var app = (function () {
     			insert_dev(target, t8, anchor);
     			insert_dev(target, h23, anchor);
     			insert_dev(target, t10, anchor);
-    			insert_dev(target, ul3, anchor);
+    			insert_dev(target, div3, anchor);
+    			append_dev(div3, ul3);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].m(ul3, null);
     			}
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*jan*/ 1) {
+    			if (dirty & /*Date, currentDate, jan*/ 17) {
     				each_value_3 = /*jan*/ ctx[0];
     				validate_each_argument(each_value_3);
     				let i;
@@ -819,7 +862,7 @@ var app = (function () {
     				each_blocks_3.length = each_value_3.length;
     			}
 
-    			if (dirty & /*feb*/ 2) {
+    			if (dirty & /*Date, currentDate, feb*/ 18) {
     				each_value_2 = /*feb*/ ctx[1];
     				validate_each_argument(each_value_2);
     				let i;
@@ -843,7 +886,7 @@ var app = (function () {
     				each_blocks_2.length = each_value_2.length;
     			}
 
-    			if (dirty & /*mar*/ 4) {
+    			if (dirty & /*Date, currentDate, mar*/ 20) {
     				each_value_1 = /*mar*/ ctx[2];
     				validate_each_argument(each_value_1);
     				let i;
@@ -867,7 +910,7 @@ var app = (function () {
     				each_blocks_1.length = each_value_1.length;
     			}
 
-    			if (dirty & /*apr*/ 8) {
+    			if (dirty & /*Date, currentDate, apr*/ 24) {
     				each_value = /*apr*/ ctx[3];
     				validate_each_argument(each_value);
     				let i;
@@ -896,22 +939,22 @@ var app = (function () {
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(h20);
     			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(ul0);
+    			if (detaching) detach_dev(div0);
     			destroy_each(each_blocks_3, detaching);
     			if (detaching) detach_dev(t2);
     			if (detaching) detach_dev(h21);
     			if (detaching) detach_dev(t4);
-    			if (detaching) detach_dev(ul1);
+    			if (detaching) detach_dev(div1);
     			destroy_each(each_blocks_2, detaching);
     			if (detaching) detach_dev(t5);
     			if (detaching) detach_dev(h22);
     			if (detaching) detach_dev(t7);
-    			if (detaching) detach_dev(ul2);
+    			if (detaching) detach_dev(div2);
     			destroy_each(each_blocks_1, detaching);
     			if (detaching) detach_dev(t8);
     			if (detaching) detach_dev(h23);
     			if (detaching) detach_dev(t10);
-    			if (detaching) detach_dev(ul3);
+    			if (detaching) detach_dev(div3);
     			destroy_each(each_blocks, detaching);
     		}
     	};
@@ -934,7 +977,9 @@ var app = (function () {
     	let jan = [
     		{
     			event: "S'mores Night",
-    			date: "January 13th"
+    			date: "January 13th",
+    			dateString: "2022-01-13",
+    			class: ""
     		},
     		{ event: "Ski Lodge", date: "January 16th" },
     		{
@@ -989,26 +1034,28 @@ var app = (function () {
     		}
     	];
 
+    	let currentDate = new Date();
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<Roadmap> was created with unknown prop '${key}'`);
     	});
 
-    	$$self.$capture_state = () => ({ jan, feb, mar, apr });
+    	$$self.$capture_state = () => ({ jan, feb, mar, apr, currentDate });
 
     	$$self.$inject_state = $$props => {
     		if ('jan' in $$props) $$invalidate(0, jan = $$props.jan);
     		if ('feb' in $$props) $$invalidate(1, feb = $$props.feb);
     		if ('mar' in $$props) $$invalidate(2, mar = $$props.mar);
     		if ('apr' in $$props) $$invalidate(3, apr = $$props.apr);
+    		if ('currentDate' in $$props) $$invalidate(4, currentDate = $$props.currentDate);
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [jan, feb, mar, apr];
+    	return [jan, feb, mar, apr, currentDate];
     }
 
     class Roadmap extends SvelteComponentDev {
@@ -1032,26 +1079,49 @@ var app = (function () {
     function create_fragment$1(ctx) {
     	let img;
     	let img_src_value;
+    	let t0;
+    	let h2;
+    	let t1;
+    	let a;
+    	let t2;
 
     	const block = {
     		c: function create() {
     			img = element("img");
+    			t0 = space();
+    			h2 = element("h2");
+    			t1 = text("View on ");
+    			a = element("a");
+    			t2 = text("GitHub");
     			if (!src_url_equal(img.src, img_src_value = /*src*/ ctx[0])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Crest.");
-    			attr_dev(img, "class", "svelte-s2vcic");
-    			add_location(img, file$1, 4, 0, 50);
+    			attr_dev(img, "class", "svelte-18m1sfr");
+    			add_location(img, file$1, 5, 0, 110);
+    			attr_dev(a, "href", /*href*/ ctx[1]);
+    			attr_dev(a, "target", "_blank");
+    			attr_dev(a, "class", "svelte-18m1sfr");
+    			add_location(a, file$1, 6, 12, 148);
+    			attr_dev(h2, "class", "svelte-18m1sfr");
+    			add_location(h2, file$1, 6, 0, 136);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, h2, anchor);
+    			append_dev(h2, t1);
+    			append_dev(h2, a);
+    			append_dev(a, t2);
     		},
     		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(img);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(h2);
     		}
     	};
 
@@ -1070,23 +1140,25 @@ var app = (function () {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Footer', slots, []);
     	let src = './PKP.png';
+    	let href = 'https://github.com/kgbumgarner/AIcalendar';
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<Footer> was created with unknown prop '${key}'`);
     	});
 
-    	$$self.$capture_state = () => ({ src });
+    	$$self.$capture_state = () => ({ src, href });
 
     	$$self.$inject_state = $$props => {
     		if ('src' in $$props) $$invalidate(0, src = $$props.src);
+    		if ('href' in $$props) $$invalidate(1, href = $$props.href);
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [src];
+    	return [src, href];
     }
 
     class Footer extends SvelteComponentDev {
@@ -1130,10 +1202,10 @@ var app = (function () {
     			t1 = space();
     			footer1 = element("footer");
     			create_component(footer0.$$.fragment);
-    			attr_dev(header1, "class", "svelte-6z25yp");
+    			attr_dev(header1, "class", "svelte-1r8lviv");
     			add_location(header1, file, 7, 0, 166);
     			add_location(main, file, 11, 0, 201);
-    			attr_dev(footer1, "class", "svelte-6z25yp");
+    			attr_dev(footer1, "class", "svelte-1r8lviv");
     			add_location(footer1, file, 15, 0, 233);
     		},
     		l: function claim(nodes) {
