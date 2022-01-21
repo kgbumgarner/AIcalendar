@@ -71,6 +71,14 @@ var app = (function () {
     function children(element) {
         return Array.from(element.childNodes);
     }
+    function set_style(node, key, value, important) {
+        if (value === null) {
+            node.style.removeProperty(key);
+        }
+        else {
+            node.style.setProperty(key, value, important ? 'important' : '');
+        }
+    }
     function custom_event(type, detail, bubbles = false) {
         const e = document.createEvent('CustomEvent');
         e.initCustomEvent(type, bubbles, false, detail);
@@ -386,12 +394,13 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			h1 = element("h1");
-    			h1.textContent = "AI Calendar: 2022";
+    			h1.textContent = "AI Calendar 2022";
     			t1 = space();
     			p = element("p");
-    			p.textContent = "Roadmap of events for Alpha Iota";
+    			p.textContent = "★ Alpha Iota ★";
     			add_location(h1, file$3, 0, 0, 0);
-    			add_location(p, file$3, 1, 0, 28);
+    			set_style(p, "margin-bottom", "25px");
+    			add_location(p, file$3, 1, 0, 27);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -493,14 +502,14 @@ var app = (function () {
     			t1 = text(" on ");
     			span = element("span");
     			t2 = text(t2_value);
-    			attr_dev(span, "class", "svelte-151qpsa");
-    			add_location(span, file$2, 34, 110, 1194);
+    			attr_dev(span, "class", "svelte-ggfzw1");
+    			add_location(span, file$2, 34, 110, 1638);
 
     			attr_dev(li, "class", "" + (null_to_empty(Date.parse(/*currentDate*/ ctx[4]) > Date.parse(/*e*/ ctx[5].dateString)
     			? "past"
-    			: "upcoming") + " svelte-151qpsa"));
+    			: "upcoming") + " svelte-ggfzw1"));
 
-    			add_location(li, file$2, 34, 12, 1096);
+    			add_location(li, file$2, 34, 12, 1540);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -543,14 +552,14 @@ var app = (function () {
     			t1 = text(" on ");
     			span = element("span");
     			t2 = text(t2_value);
-    			attr_dev(span, "class", "svelte-151qpsa");
-    			add_location(span, file$2, 42, 110, 1444);
+    			attr_dev(span, "class", "svelte-ggfzw1");
+    			add_location(span, file$2, 42, 110, 1888);
 
     			attr_dev(li, "class", "" + (null_to_empty(Date.parse(/*currentDate*/ ctx[4]) > Date.parse(/*e*/ ctx[5].dateString)
     			? "past"
-    			: "upcoming") + " svelte-151qpsa"));
+    			: "upcoming") + " svelte-ggfzw1"));
 
-    			add_location(li, file$2, 42, 12, 1346);
+    			add_location(li, file$2, 42, 12, 1790);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -593,14 +602,14 @@ var app = (function () {
     			t1 = text(" on ");
     			span = element("span");
     			t2 = text(t2_value);
-    			attr_dev(span, "class", "svelte-151qpsa");
-    			add_location(span, file$2, 50, 110, 1691);
+    			attr_dev(span, "class", "svelte-ggfzw1");
+    			add_location(span, file$2, 50, 110, 2135);
 
     			attr_dev(li, "class", "" + (null_to_empty(Date.parse(/*currentDate*/ ctx[4]) > Date.parse(/*e*/ ctx[5].dateString)
     			? "past"
-    			: "upcoming") + " svelte-151qpsa"));
+    			: "upcoming") + " svelte-ggfzw1"));
 
-    			add_location(li, file$2, 50, 12, 1593);
+    			add_location(li, file$2, 50, 12, 2037);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -643,14 +652,14 @@ var app = (function () {
     			t1 = text(" on ");
     			span = element("span");
     			t2 = text(t2_value);
-    			attr_dev(span, "class", "svelte-151qpsa");
-    			add_location(span, file$2, 58, 110, 1938);
+    			attr_dev(span, "class", "svelte-ggfzw1");
+    			add_location(span, file$2, 58, 110, 2382);
 
     			attr_dev(li, "class", "" + (null_to_empty(Date.parse(/*currentDate*/ ctx[4]) > Date.parse(/*e*/ ctx[5].dateString)
     			? "past"
-    			: "upcoming") + " svelte-151qpsa"));
+    			: "upcoming") + " svelte-ggfzw1"));
 
-    			add_location(li, file$2, 58, 12, 1840);
+    			add_location(li, file$2, 58, 12, 2284);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -773,26 +782,26 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(h20, file$2, 30, 0, 1009);
-    			attr_dev(ul0, "class", "svelte-151qpsa");
-    			add_location(ul0, file$2, 32, 4, 1052);
-    			attr_dev(div0, "class", "ulCon svelte-151qpsa");
-    			add_location(div0, file$2, 31, 0, 1027);
-    			add_location(h21, file$2, 38, 0, 1258);
-    			attr_dev(ul1, "class", "svelte-151qpsa");
-    			add_location(ul1, file$2, 40, 4, 1302);
-    			attr_dev(div1, "class", "ulCon svelte-151qpsa");
-    			add_location(div1, file$2, 39, 0, 1277);
-    			add_location(h22, file$2, 46, 0, 1508);
-    			attr_dev(ul2, "class", "svelte-151qpsa");
-    			add_location(ul2, file$2, 48, 4, 1549);
-    			attr_dev(div2, "class", "ulCon svelte-151qpsa");
-    			add_location(div2, file$2, 47, 0, 1524);
-    			add_location(h23, file$2, 54, 0, 1755);
-    			attr_dev(ul3, "class", "svelte-151qpsa");
-    			add_location(ul3, file$2, 56, 4, 1796);
-    			attr_dev(div3, "class", "ulCon svelte-151qpsa");
-    			add_location(div3, file$2, 55, 0, 1771);
+    			add_location(h20, file$2, 30, 0, 1453);
+    			attr_dev(ul0, "class", "svelte-ggfzw1");
+    			add_location(ul0, file$2, 32, 4, 1496);
+    			attr_dev(div0, "class", "ulCon svelte-ggfzw1");
+    			add_location(div0, file$2, 31, 0, 1471);
+    			add_location(h21, file$2, 38, 0, 1702);
+    			attr_dev(ul1, "class", "svelte-ggfzw1");
+    			add_location(ul1, file$2, 40, 4, 1746);
+    			attr_dev(div1, "class", "ulCon svelte-ggfzw1");
+    			add_location(div1, file$2, 39, 0, 1721);
+    			add_location(h22, file$2, 46, 0, 1952);
+    			attr_dev(ul2, "class", "svelte-ggfzw1");
+    			add_location(ul2, file$2, 48, 4, 1993);
+    			attr_dev(div2, "class", "ulCon svelte-ggfzw1");
+    			add_location(div2, file$2, 47, 0, 1968);
+    			add_location(h23, file$2, 54, 0, 2199);
+    			attr_dev(ul3, "class", "svelte-ggfzw1");
+    			add_location(ul3, file$2, 56, 4, 2240);
+    			attr_dev(div3, "class", "ulCon svelte-ggfzw1");
+    			add_location(div3, file$2, 55, 0, 2215);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -981,56 +990,86 @@ var app = (function () {
     			dateString: "2022-01-13",
     			class: ""
     		},
-    		{ event: "Ski Lodge", date: "January 16th" },
+    		{
+    			event: "Ski Lodge",
+    			date: "January 16th",
+    			dateString: "2022-01-16",
+    			class: ""
+    		},
     		{
     			event: "Formal Recruitment",
-    			date: "January 18th - 20th"
+    			date: "January 18th - 20th",
+    			dateString: "2022-01-20",
+    			class: ""
     		},
     		{
     			event: "Informal Recruitment",
-    			date: "January 24th - 28th"
+    			date: "January 24th - 28th",
+    			dateString: "2022-01-28",
+    			class: ""
     		}
     	];
 
     	let feb = [
     		{
     			event: "Chipotle Benefit Night",
-    			date: "February 5th"
+    			date: "February 7th",
+    			dateString: "2022-02-07",
+    			class: ""
     		},
     		{
     			event: "Formal",
-    			date: "February 11th - 13th"
+    			date: "February 11th - 13th",
+    			dateString: "2022-02-13",
+    			class: ""
     		},
     		{
     			event: "Mom's Weekend",
-    			date: "February 18th - 20th"
+    			date: "February 18th - 20th",
+    			dateString: "2022-02-20",
+    			class: ""
     		},
     		{
     			event: "Mardi Gras Social w/ GPHI",
-    			date: "February 23rd"
+    			date: "February 23rd",
+    			dateString: "2022-02-23",
+    			class: ""
     		}
     	];
 
     	let mar = [
     		{
     			event: "Spring Break",
-    			date: "March 5th - 13th"
+    			date: "March 5th - 13th",
+    			dateString: "2022-03-13",
+    			class: ""
     		},
     		{
     			event: "Social w/ Zeta and SK",
-    			date: "March 19th"
+    			date: "March 19th",
+    			dateString: "2022-03-19",
+    			class: ""
     		},
     		{
     			event: "Bayou",
-    			date: "March 25th - 26th"
+    			date: "March 25th - 26th",
+    			dateString: "2022-03-26",
+    			class: ""
     		}
     	];
 
     	let apr = [
-    		{ event: "Fake Wedding", date: "April 9th" },
+    		{
+    			event: "Fake Wedding",
+    			date: "April 9th",
+    			dateString: "2022-04-09",
+    			class: ""
+    		},
     		{
     			event: "War of The Roses",
-    			date: "April 11th - 15th"
+    			date: "April 11th - 15th",
+    			dateString: "2022-04-15",
+    			class: ""
     		}
     	];
 

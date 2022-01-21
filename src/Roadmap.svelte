@@ -1,27 +1,27 @@
 <script>
     let jan = [
         {event: "S'mores Night", date: "January 13th", dateString: "2022-01-13", class: ""},
-        {event: "Ski Lodge", date: "January 16th"},
-        {event: "Formal Recruitment", date: "January 18th - 20th"},
-        {event: "Informal Recruitment", date: "January 24th - 28th"}
+        {event: "Ski Lodge", date: "January 16th", dateString: "2022-01-16", class: ""},
+        {event: "Formal Recruitment", date: "January 18th - 20th", dateString: "2022-01-20", class: ""},
+        {event: "Informal Recruitment", date: "January 24th - 28th", dateString: "2022-01-28", class: ""}
     ];
 
     let feb = [
-        {event: "Chipotle Benefit Night", date: "February 5th"},
-        {event: "Formal", date: "February 11th - 13th"},
-        {event: "Mom's Weekend", date: "February 18th - 20th"},
-        {event: "Mardi Gras Social w/ GPHI", date: "February 23rd"}
+        {event: "Chipotle Benefit Night", date: "February 7th", dateString: "2022-02-07", class: ""},
+        {event: "Formal", date: "February 11th - 13th", dateString: "2022-02-13", class: ""},
+        {event: "Mom's Weekend", date: "February 18th - 20th", dateString: "2022-02-20", class: ""},
+        {event: "Mardi Gras Social w/ GPHI", date: "February 23rd", dateString: "2022-02-23", class: ""}
     ];
 
     let mar = [
-        {event: "Spring Break", date: "March 5th - 13th"},
-        {event: "Social w/ Zeta and SK", date: "March 19th"},
-        {event: "Bayou", date: "March 25th - 26th"}
+        {event: "Spring Break", date: "March 5th - 13th", dateString: "2022-03-13", class: ""},
+        {event: "Social w/ Zeta and SK", date: "March 19th", dateString: "2022-03-19", class: ""},
+        {event: "Bayou", date: "March 25th - 26th", dateString: "2022-03-26", class: ""}
     ];
 
     let apr = [
-        {event: "Fake Wedding", date: "April 9th"},
-        {event: "War of The Roses", date: "April 11th - 15th"}
+        {event: "Fake Wedding", date: "April 9th", dateString: "2022-04-09", class: ""},
+        {event: "War of The Roses", date: "April 11th - 15th", dateString: "2022-04-15", class: ""}
     ];
     
     let currentDate = new Date();
@@ -79,7 +79,7 @@
     }
 
     .past {
-        opacity: 0.4;
+        opacity: 0.3;
     }
 
     @media screen and (max-device-width: 640px) {
