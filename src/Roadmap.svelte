@@ -21,7 +21,7 @@
 
     let apr = [
         {event: "Fake Wedding", date: "April 9th", dateString: "2022-04-09", class: ""},
-        {event: "War of The Roses", date: "April 11th - 15th", dateString: "2022-04-15", class: ""}
+        {event: "Formal Chapter", date: "April 13th", dateString: "2022-04-13", class: ""},
     ];
     
     let currentDate = new Date();
